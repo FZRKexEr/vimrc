@@ -7,7 +7,7 @@ This is the Vim configuration I'm using now. My need for vim is simply to write 
 Running the following commands in your terminal.
 
 ```sh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.sh)"
 ```
 
 
