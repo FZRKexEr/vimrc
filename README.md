@@ -13,7 +13,7 @@ sh ~/.vim_runtime/install.sh
 Open the Vim, and run the command 
 
 ```vimscript
-PlugInstall
+:PlugInstall
 ```
 
 
