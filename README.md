@@ -7,13 +7,7 @@ This is the Vim configuration I'm using now. My need for vim is simply to write 
 Running the following commands in your terminal.
 
 ```sh
-git clone --depth=1 https://github.com/FZRKexEr/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install.sh
-```
-Open the Vim, and run the command 
-
-```vimscript
-:PlugInstall
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 

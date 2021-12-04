@@ -1,6 +1,10 @@
 #!/bin/sh
 set -e
 
+pos=$(pwd)
+
+git clone --depth=1 https://github.com/fzrkexer/vimrc ~/.vim_runtime
+
 cd ~/.vim_runtime/plugged
 
 echo '
@@ -13,5 +17,10 @@ git clone --depth=1 https://github.com/Yggdroot/indentLine
 git clone --depth=1 https://github.com/dense-analysis/ale 
 git clone --depth=1 https://github.com/arcticicestudio/nord-vim 
 
-#vim -c PlugInstall
+cd ~/.vim_runtime/
+rm install.sh
+
+cd $pos
+echo "Installation succeeded! ヾ(≧∇≦*)ゝ"
+
 
