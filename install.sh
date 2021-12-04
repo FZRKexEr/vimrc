@@ -8,5 +8,5 @@ set runtimepath+=~/.vim_runtime
 source ~/.vim_runtime/init.vim
 ' > ~/.vimrc
 
-echo "Installed Vim configuration successfully!" 
+vim -c PlugInstall
 
