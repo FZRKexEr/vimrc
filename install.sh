@@ -18,7 +18,6 @@ git clone --depth=1 https://github.com/dense-analysis/ale
 git clone --depth=1 https://github.com/arcticicestudio/nord-vim 
 
 cd ~/.vim_runtime/
-rm install.sh
 
 cd $pos
 echo "Installation succeeded! ヾ(≧∇≦*)ゝ"

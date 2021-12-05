@@ -10,6 +10,13 @@ Running the following command in your terminal.
 sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.sh)"
 ```
 
+国内镜像安装
+
+```sh
+sh -c "$(wget -O- https://ghproxy.com/https://raw.githubusercontent.com/FZRKexEr/vimrc/main/cn_install.sh)"
+```
+```
+
 
 ## Key Mappings
 The leader is space, so `<leader>` means space. 
