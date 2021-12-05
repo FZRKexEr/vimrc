@@ -17,7 +17,8 @@ sh -c "$(wget -O- https://ghproxy.com/https://raw.githubusercontent.com/FZRKexEr
 ```
 
 ## Key Mappings
-The leader is space, so `<leader>` means space. 
+
+`<leader>` is space. 
 
 1. Compile and run the current cpp file: `<leader>r`.
 
