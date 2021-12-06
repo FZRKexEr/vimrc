@@ -2,8 +2,6 @@
 " 插件
 call plug#begin('~/.vim_runtime/plugged')
 
-	" One 主题
-	Plug 'rakr/vim-one' 
 
 	" 显示缩进线 
 	Plug 'Yggdroot/indentLine'
@@ -11,8 +9,19 @@ call plug#begin('~/.vim_runtime/plugged')
   " 不需要Lsp的语法检查 
   Plug 'dense-analysis/ale'
 
+  " 下面是 Vim Colors
+ 
   " 经典 Nord 
   Plug 'arcticicestudio/nord-vim'
+
+  " Deus
+  Plug 'ajmwagar/vim-deus'
+
+  " One  
+	Plug 'rakr/vim-one' 
+
+  " Palenight
+  Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
 
@@ -43,10 +52,15 @@ let &t_ut=''
 
 " The color of the cursor is not controlled by terminal vim and needs to be configured in the terminal.
 
-set background=dark" or light if you prefer the light version
+set background=dark
+
+
+colo deus 
 
 "colo nord
-colo one
+"colo one
+"colo deus
+"colo palenight
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Some maps(Make the experience of coding better.)
@@ -63,4 +77,9 @@ function! Run()
   execute "!time ./%<"
   silent execute "!mv %< ~/.trash"
 endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" MacVim 配置
+
+set guifont=FixedsysExcelsiorIIIb:h24
 
