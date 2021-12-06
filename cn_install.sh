@@ -16,6 +16,8 @@ git clone --depth=1 https://github.com.cnpmjs.org/rakr/vim-one
 git clone --depth=1 https://github.com.cnpmjs.org/Yggdroot/indentLine 
 git clone --depth=1 https://github.com.cnpmjs.org/dense-analysis/ale 
 git clone --depth=1 https://github.com.cnpmjs.org/arcticicestudio/nord-vim 
+git clone --depth=1 https://github.com.cnpmjs.org/ajmwagar/vim-deus
+git clone --depth=1 https://github.com.cnpmjs.org/drewtempelmeyer/palenight.vim
 
 cd ~/.vim_runtime/
 

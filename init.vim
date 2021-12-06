@@ -55,11 +55,9 @@ let &t_ut=''
 set background=dark
 
 
-colo deus 
-
 "colo nord
 "colo one
-"colo deus
+colo deus
 "colo palenight
 
 """"""""""""""""""""""""""""""""""""""""""""""""
