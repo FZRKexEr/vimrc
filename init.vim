@@ -1,7 +1,9 @@
-""""""""""""""""""""""""""""""""""""""""""""""""
+ """""""""""""""""""""""""""""""""""""""""""""""
 " 插件
 call plug#begin('~/.vim_runtime/plugged')
 
+  " skywind 大佬的菜单插件
+  Plug 'skywind3000/vim-quickui'
 
 	" 显示缩进线 
 	Plug 'Yggdroot/indentLine'
@@ -24,6 +26,8 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
+
+source ~/.vim_runtime/core/quickui.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Editing experience(The soul of the vimrc.)
