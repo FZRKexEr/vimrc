@@ -1,9 +1,14 @@
  """""""""""""""""""""""""""""""""""""""""""""""
 " 插件
 call plug#begin('~/.vim_runtime/plugged')
+  " c/cpp 语法高亮
+  Plug 'octol/vim-cpp-enhanced-highlight'
 
-  " skywind 大佬的菜单插件
+  " skywind 大佬的菜单插件/ buffer 跳转
   Plug 'skywind3000/vim-quickui'
+
+  " 自动保存
+  Plug 'thaerkh/vim-workspace'
 
 	" 显示缩进线 
 	Plug 'Yggdroot/indentLine'
@@ -34,6 +39,7 @@ call plug#begin('~/.vim_runtime/plugged')
 call plug#end()
 
 source ~/.vim_runtime/core/quickui.vim
+source ~/.vim_runtime/core/workspace.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Editing experience(The soul of the vimrc.)
@@ -73,19 +79,8 @@ colo deus
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Some maps(Make the experience of coding better.)
 
-"" leader is space
-"let mapleader="\<space>"
-"
-"" space + r: run cpp
-"nnoremap <leader>r :call Run()<CR>
-"
-"function! Run()
-"  silent execute "w"
-"  silent execute "!g++ % -std=c++17 -o %< -Wall -O2" 
-"  execute "!time ./%<"
-"  silent execute "!mv %< ~/.trash"
-"endfunction
-"
+nnoremap <space>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " MacVim 配置
 
