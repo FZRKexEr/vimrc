@@ -18,6 +18,11 @@ git clone --depth=1 https://github.com.cnpmjs.org/dense-analysis/ale
 git clone --depth=1 https://github.com.cnpmjs.org/arcticicestudio/nord-vim 
 git clone --depth=1 https://github.com.cnpmjs.org/ajmwagar/vim-deus
 git clone --depth=1 https://github.com.cnpmjs.org/drewtempelmeyer/palenight.vim
+git clone --depth=1 https://hub.fastgit.org/sainnhe/everforest
+git clone --depth=1 https://hub.fastgit.org/sainnhe/gruvbox-material
+git clone --depth=1 https://hub.fastgit.org/sainnhe/edge
+git clone --depth=1 https://hub.fastgit.org/sainnhe/sonokai
+git clone --depth=1 https://hub.fastgit.org/skywind3000/vim-quickui
 
 cd ~/.vim_runtime/
 

@@ -24,6 +24,12 @@ call plug#begin('~/.vim_runtime/plugged')
 
   " Palenight
   Plug 'drewtempelmeyer/palenight.vim'
+  
+  " sainnhe 的护眼插件系列 支持 Tree-sitter
+  Plug 'sainnhe/gruvbox-material'
+  Plug 'sainnhe/everforest'
+  Plug 'sainnhe/sonokai'
+  Plug 'sainnhe/edge'
 
 call plug#end()
 
@@ -67,19 +73,19 @@ colo deus
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Some maps(Make the experience of coding better.)
 
-" leader is space
-let mapleader="\<space>"
-
-" space + r: run cpp
-nnoremap <leader>r :call Run()<CR>
-
-function! Run()
-  silent execute "w"
-  silent execute "!g++ % -std=c++17 -o %< -Wall -O2" 
-  execute "!time ./%<"
-  silent execute "!mv %< ~/.trash"
-endfunction
-
+"" leader is space
+"let mapleader="\<space>"
+"
+"" space + r: run cpp
+"nnoremap <leader>r :call Run()<CR>
+"
+"function! Run()
+"  silent execute "w"
+"  silent execute "!g++ % -std=c++17 -o %< -Wall -O2" 
+"  execute "!time ./%<"
+"  silent execute "!mv %< ~/.trash"
+"endfunction
+"
 """"""""""""""""""""""""""""""""""""""""""""""""
 " MacVim 配置
 
