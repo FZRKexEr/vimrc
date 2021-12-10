@@ -1,4 +1,5 @@
-#!/bin/sh
+#
+/bin/sh
 set -e
 
 pos=$(pwd)
