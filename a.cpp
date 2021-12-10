@@ -1,3 +1,5 @@
-for (int i = 1; i <= n; i++) {
-
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  return 0;
 }
