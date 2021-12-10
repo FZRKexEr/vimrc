@@ -1,13 +1,22 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" 自动安装插件
 if empty(glob('~/.vim_runtime/autoload/plug.vim'))
   silent execute "!curl -fLo ~/.vim_runtime/autoload/plug.vim --create-dirs https://ghproxy.com/https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-  autocmd VimEnter * PlugInstall | source $MYVIMRC 
+  autocmd VimEnter * PlugInstall | source ~/.vimrc
 endif
 
 
 call plug#begin('~/.vim_runtime/plugged')
+  " 支持 tab 的 buffer 栏
+  Plug 'zefei/vim-wintabs'
 
-  " bufferline
-  Plug 'ap/vim-buftabline'
+  " 强化终端 Vim 体验, 接近 Gui (Good!)
+  Plug 'wincent/terminus'
+  " 内置终端
+  Plug 'voldikss/vim-floaterm'
 
   "不需要Lsp的 C/C++ 语法高亮
   Plug 'octol/vim-cpp-enhanced-highlight'
@@ -18,7 +27,7 @@ call plug#begin('~/.vim_runtime/plugged')
 	" 显示缩进线
 	Plug 'Yggdroot/indentLine'
 
-  " 不需要Lsp的语法检查 
+  " 不需要Lsp的语法检查
   Plug 'dense-analysis/ale'
 
   " Colors
@@ -32,9 +41,7 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/edge'
 
 call plug#end()
-
 source ~/.vim_runtime/core/workspace.vim
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -53,6 +60,7 @@ set nu
 set signcolumn=yes
 set cursorline
 set hlsearch
+set nowrap
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -68,7 +76,7 @@ let &t_ut=''
 set background=dark
 
 if empty(glob('~/.vim_runtime/plugged/everforest/README.md'))
-else 
+else
   colo everforest
 endif
 
@@ -77,18 +85,30 @@ endif
 " => Some Maps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <space>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
+let mapleader = " "
+
+if has("gui_running")
+  nnoremap <leader>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
+  nnoremap <leader>t :!cf test<CR>
+  nnoremap <leader>s :!cf submit<CR>
+else
+  nnoremap <leader>r :!clear && g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
+  nnoremap <leader>t :!clean && cf test<CR>
+  nnoremap <leader>s :!clean && cf submit<CR>
+endif
+
 nnoremap <S-h> :bprev <CR>
 nnoremap <S-l> :bnext <CR>
-nnoremap <space>q :bdelet <CR>
+nnoremap <leader>q :bdelet <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MacVim Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set guifont=FixedsysExcelsiorIIIb:h24
+if has("gui_running")
+  set guifont=FixedsysExcelsiorIIIb:h24
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
