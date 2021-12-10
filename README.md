@@ -11,6 +11,12 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
 ```
 
 ## Key Mappings
+```vimscript
+nnoremap <space>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
+nnoremap <S-h> :bprev <CR>
+nnoremap <S-l> :bnext <CR>
+nnoremap <space>q :bdelet <CR>
+```
 
 
 
