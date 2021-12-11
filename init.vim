@@ -10,6 +10,9 @@ endif
 
 
 call plug#begin('~/.vim_runtime/plugged')
+
+  " 彩虹括号
+  Plug 'luochen1990/rainbow'
   " 支持 tab 的 buffer 栏
   Plug 'zefei/vim-wintabs'
 
@@ -42,6 +45,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
 call plug#end()
 source ~/.vim_runtime/core/workspace.vim
+source ~/.vim_runtime/core/rainbow.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -93,8 +97,8 @@ if has("gui_running")
   nnoremap <leader>s :!cf submit<CR>
 else
   nnoremap <leader>r :!clear && g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-  nnoremap <leader>t :!clean && cf test<CR>
-  nnoremap <leader>s :!clean && cf submit<CR>
+  nnoremap <leader>t :!clear && cf test<CR>
+  nnoremap <leader>s :!clear && cf submit<CR>
 endif
 
 nnoremap <S-h> :bprev <CR>
