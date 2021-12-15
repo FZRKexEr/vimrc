@@ -11,6 +11,7 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
+  Plug 'vimwiki/vimwiki'
   " 彩虹括号
   Plug 'luochen1990/rainbow'
   " 支持 tab 的 buffer 栏
@@ -51,6 +52,7 @@ source ~/.vim_runtime/core/rainbow.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocp
+filetype plugin on
 
 set tabstop=2
 set shiftwidth=2
