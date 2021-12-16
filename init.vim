@@ -11,7 +11,10 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
-  Plug 'vimwiki/vimwiki'
+  Plug 'vimwiki/vimwiki'  
+
+  "
+  Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   " 彩虹括号
   Plug 'luochen1990/rainbow'
   " 支持 tab 的 buffer 栏
@@ -19,6 +22,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
   " 强化终端 Vim 体验, 接近 Gui (Good!)
   Plug 'wincent/terminus'
+
   " 内置终端
   Plug 'voldikss/vim-floaterm'
 
@@ -47,6 +51,8 @@ call plug#begin('~/.vim_runtime/plugged')
 call plug#end()
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
+source ~/.vim_runtime/core/vimwiki.vim
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
