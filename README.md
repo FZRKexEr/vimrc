@@ -1,6 +1,19 @@
 # Vimrc
 
-This is the Vim configuration I'm using now. My need for vim is simply to write the code as quickly as possible. So I don't add some configurations which I think are useless.
+A beautiful and practical vim configuration used for daily XCPC training.
+
+- Suitable for C/C++ (hightlight, compile and run).
+- Beautiful and eye-protecting dark colorscheme.
+- Real-time syntax error prompt.
+- No other useless functions.
+
+
+## Screenshot
+
+
+## Requirements
+
+- Python2.7+ or Python3.1+.
 
 ## How to install
 
@@ -11,19 +24,14 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
 ```
 
 ## Key Mappings
-```vimscript
-nnoremap <space>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-nnoremap <S-h> :bprev <CR>
-nnoremap <S-l> :bnext <CR>
-nnoremap <space>q :bdelet <CR>
-```
 
+The `leader` is <Space>.
 
-
-
-
-
-
- 
-
+| Command                    | Description
+| -------                    | -----------
+| <leader>r                  | compile and run
+| <S-h>                      | move to the previous buffer
+| <S-l>                      | move to the next buffer
+| <leader>q                  | Exit the current buffer
+| <leader>f                  | File search
 

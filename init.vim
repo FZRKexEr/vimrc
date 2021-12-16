@@ -11,29 +11,19 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
-
-  Plug 'vimwiki/vimwiki'  
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   " 彩虹括号
   Plug 'luochen1990/rainbow'
   " 支持 tab 的 buffer 栏
   Plug 'zefei/vim-wintabs'
-
   " 强化终端 Vim 体验, 接近 Gui (Good!)
   Plug 'wincent/terminus'
-
-  " 内置终端
-  Plug 'voldikss/vim-floaterm'
-
   "不需要Lsp的 C/C++ 语法高亮
   Plug 'octol/vim-cpp-enhanced-highlight'
-
   " 自动保存
   Plug 'thaerkh/vim-workspace'
-
 	" 显示缩进线
 	Plug 'Yggdroot/indentLine'
-
   " 不需要Lsp的语法检查
   Plug 'dense-analysis/ale'
 
@@ -50,7 +40,6 @@ call plug#begin('~/.vim_runtime/plugged')
 call plug#end()
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
-source ~/.vim_runtime/core/vimwiki.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
