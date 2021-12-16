@@ -5,11 +5,12 @@ A beautiful and practical vim configuration used for daily XCPC training.
 - Suitable for C/C++ (hightlight, compile and run).
 - Beautiful and eye-protecting dark colorscheme.
 - Real-time syntax error prompt.
+- Markdown support
 - No other useless functions.
-
 
 ## Screenshot
 
+![Preview](https://github.com/FZRKexEr/vimrc/images/Preview.png)
 
 ## Requirements
 
@@ -23,15 +24,31 @@ Running the following command in your terminal.
 sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.sh)"
 ```
 
-## Key Mappings
+## Colorscheme
+
+Apart from the default colorscheme, several other colorschemes are built in.
+
+- nord
+- deus
+- one
+- palenight
+- gruvbox-material
+- everforest (Default)
+- sonokai
+- edge
+
+
+## Usage
 
 The `leader` is `<Space>`.
 
-| Command                    | Description
-| -------                    | -----------
-| `<leader>r`                  | compile and run
-| `<S-h>`                      | move to the previous buffer
-| `<S-l>`                      | move to the next buffer
-| `<leader>q`                  | Exit the current buffer
-| `<leader>f`                  | File search
+| Command     | Description                 |
+| ----------- | --------------------------- |
+| `<leader>r` | compile and run             |
+| `<S-h>`     | move to the previous buffer |
+| `<S-l>`     | move to the next buffer     |
+| `<leader>q` | Exit the current buffer     |
+| `<leader>f` | File searchf                |
+| `<space>e`  | Try it in a markdown file   |
+
 

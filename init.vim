@@ -11,6 +11,10 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
+  " Markdown
+  Plug 'godlygeek/tabular'
+  Plug 'gabrielelana/vim-markdown'
+  " 文件搜索
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   " 彩虹括号
   Plug 'luochen1990/rainbow'
@@ -29,7 +33,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
   " Colors
   Plug 'arcticicestudio/nord-vim'
-  Plug 'ajmwagar/vim-deus' 
+  Plug 'ajmwagar/vim-deus'
   Plug 'rakr/vim-one'
   Plug 'drewtempelmeyer/palenight.vim'
   Plug 'sainnhe/gruvbox-material'
@@ -40,6 +44,7 @@ call plug#begin('~/.vim_runtime/plugged')
 call plug#end()
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
+source ~/.vim_runtime/core/markdown.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
