@@ -9,7 +9,5 @@ set runtimepath+=~/.vim_runtime
 source ~/.vim_runtime/init.vim
 ' > ~/.vimrc
 
-source ~/.vimrc
-
 echo "Installation succeeded! ヾ(≧∇≦*)ゝ"
 echo "The plugins are automatically installed the first time Vim starts."
