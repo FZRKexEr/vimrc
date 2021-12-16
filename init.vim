@@ -11,9 +11,13 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
-  Plug 'vimwiki/vimwiki'  
 
-  "
+  " NERDTree
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'preservim/nerdtree'
+
+  Plug 'vimwiki/vimwiki'  
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   " 彩虹括号
   Plug 'luochen1990/rainbow'
@@ -52,6 +56,7 @@ call plug#end()
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
 source ~/.vim_runtime/core/vimwiki.vim
+source ~/.vim_runtime/core/nerdtree.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
@@ -59,6 +64,7 @@ source ~/.vim_runtime/core/vimwiki.vim
 
 set nocp
 filetype plugin on
+set encoding=UTF-8
 
 set tabstop=2
 set shiftwidth=2
@@ -123,4 +129,3 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
