@@ -95,12 +95,12 @@ let mapleader = " "
 
 if has("gui_running")
   nnoremap <leader>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-  nnoremap <leader>t :!cf test<CR>
-  nnoremap <leader>s :!cf submit<CR>
+  "nnoremap <leader>t :!cf test<CR>
+  "nnoremap <leader>s :!cf submit<CR>
 else
   nnoremap <leader>r :!clear && g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-  nnoremap <leader>t :!clear && cf test<CR>
-  nnoremap <leader>s :!clear && cf submit<CR>
+  "nnoremap <leader>t :!clear && cf test<CR>
+  "nnoremap <leader>s :!clear && cf submit<CR>
 endif
 
 nnoremap <S-h> :bprev <CR>
