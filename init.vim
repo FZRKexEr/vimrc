@@ -12,11 +12,6 @@ endif
 call plug#begin('~/.vim_runtime/plugged')
 
 
-  " NERDTree
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-  Plug 'preservim/nerdtree'
-
   Plug 'vimwiki/vimwiki'  
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
   " 彩虹括号
@@ -56,7 +51,6 @@ call plug#end()
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
 source ~/.vim_runtime/core/vimwiki.vim
-source ~/.vim_runtime/core/nerdtree.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
