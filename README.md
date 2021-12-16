@@ -25,13 +25,13 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
 
 ## Key Mappings
 
-The `leader` is <Space>.
+The `leader` is `<Space>`.
 
 | Command                    | Description
 | -------                    | -----------
-| <leader>r                  | compile and run
-| <S-h>                      | move to the previous buffer
-| <S-l>                      | move to the next buffer
-| <leader>q                  | Exit the current buffer
-| <leader>f                  | File search
+| `<leader>r`                  | compile and run
+| `<S-h>`                      | move to the previous buffer
+| `<S-l>`                      | move to the next buffer
+| `<leader>q`                  | Exit the current buffer
+| `<leader>f`                  | File search
 
