@@ -10,7 +10,7 @@ A beautiful and practical vim configuration used for daily XCPC training.
 
 ## Screenshot
 
-![Preview](https://github.com/FZRKexEr/vimrc/images/Preview.png)
+![Preview](https://github.com/FZRKexEr/vimrc/raw/main/images/Preview.png)
 
 ## Requirements
 
