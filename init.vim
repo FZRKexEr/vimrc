@@ -27,7 +27,7 @@ call plug#begin('~/.vim_runtime/plugged')
   " 自动保存
   Plug 'thaerkh/vim-workspace'
 	" 显示缩进线
-	Plug 'Yggdroot/indentLine'
+  Plug 'Yggdroot/indentLine'
   " 不需要Lsp的语法检查
   Plug 'dense-analysis/ale'
 
