@@ -33,7 +33,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
   mirror.ghproxy.com github.com
   mirror.ghproxy.com raw.githubusercontent.com
   ```
-2. 使用 [dev-sidercar](https://gitee.com/docmirror/dev-sidecar)
+2. 使用 [dev-sidercar](https://github.com/docmirror/dev-sidecar)
 
 ## Colorscheme
 
