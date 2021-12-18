@@ -14,9 +14,10 @@ A beautiful and practical vim configuration used for daily XCPC training.
 
 ## Requirements
 
-- Python2.7+ or Python3.1+.
-- curl 
 - git
+- curl
+- Python2.7+ or Python3.1+
+- Normal network
 
 ## How to install
 
