@@ -28,7 +28,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
 
 国内网络（很）可能导致安装失败。可以尝试以下的方法解决：
 1. 使用 Github 的镜像. 
-  在 `etc/hosts` 中加入
+  在 `/etc/hosts` 中加入
   ```
   mirror.ghproxy.com github.com
   mirror.ghproxy.com raw.githubusercontent.com
