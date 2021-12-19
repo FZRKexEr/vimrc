@@ -8,8 +8,10 @@ if empty(glob('~/.vim_runtime/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source ~/.vimrc
 endif
 
-
 call plug#begin('~/.vim_runtime/plugged')
+
+  " 括号匹配(注意<CR> 冲突)
+  Plug 'LunarWatcher/auto-pairs'
 
   " Markdown
   Plug 'godlygeek/tabular'
@@ -30,7 +32,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
   Plug 'Yggdroot/indentLine'
   " 不需要Lsp的语法检查
-  Plug 'dense-analysis/ale'
+"  Plug 'dense-analysis/ale'
 
   " Colors
   Plug 'arcticicestudio/nord-vim'
@@ -43,11 +45,11 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/edge'
 
 call plug#end()
+
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
 source ~/.vim_runtime/core/markdown.vim
 source ~/.vim_runtime/core/indentLine.vim
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -60,6 +62,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+" 不喜欢
+"set backspace=eol,start,indent
+"set whichwrap+=<,>,h,l
 
 set cindent
 set clipboard=unnamed
@@ -97,17 +102,16 @@ let mapleader = " "
 
 if has("gui_running")
   nnoremap <leader>r :!g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-  "nnoremap <leader>t :!cf test<CR>
-  "nnoremap <leader>s :!cf submit<CR>
 else
   nnoremap <leader>r :!clear && g++ % -std=c++17 -o %< -Wall -O2 && ./%< && mv %< ~/.Trash<CR>
-  "nnoremap <leader>t :!clear && cf test<CR>
-  "nnoremap <leader>s :!clear && cf submit<CR>
 endif
 
 nnoremap <S-h> :bprev <CR>
 nnoremap <S-l> :bnext <CR>
 nnoremap <leader>q :bdelet <CR>
+
+" 括号匹配系列
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MacVim Configuration
