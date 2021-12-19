@@ -11,7 +11,6 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
-  Plug 'lervag/vimtex'
   " Markdown
   Plug 'godlygeek/tabular'
   Plug 'gabrielelana/vim-markdown'
