@@ -12,7 +12,6 @@ call plug#begin('~/.vim_runtime/plugged')
 
   " 括号匹配(注意<CR> 冲突)
   Plug 'LunarWatcher/auto-pairs'
-
   " Markdown
   Plug 'godlygeek/tabular'
   Plug 'gabrielelana/vim-markdown'
@@ -50,6 +49,7 @@ source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
 source ~/.vim_runtime/core/markdown.vim
 source ~/.vim_runtime/core/indentLine.vim
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
