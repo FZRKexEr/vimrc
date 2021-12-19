@@ -118,5 +118,3 @@ if has("gui_running")
   set guifont=FixedsysExcelsiorIIIb:h24
 endif
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Helper functions
