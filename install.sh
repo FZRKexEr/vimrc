@@ -1,14 +1,7 @@
 #/bin/sh
 set -e
 
-if [ -d "~/.vim_runtime" ]; then
-  cp ~/.vim_runtime ~/.vim_runtime.bak
-fi
-
-if [ -d "~/.vimrc" ]; then
-  cp ~/.vimrc ~/.vimrc.bak
-fi
-
+rm -rf ~/.vim_runtime
 git clone --depth=1 https://github.com/fzrkexer/vimrc ~/.vim_runtime
 
 echo '
