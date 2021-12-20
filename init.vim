@@ -56,8 +56,6 @@ source ~/.vim_runtime/core/indentLine.vim
 source ~/.vim_runtime/core/vimwiki.vim
 source ~/.vim_runtime/core/pear-tree.vim
 
-source ~/.vim_runtime/core/easycomplet.vim
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
