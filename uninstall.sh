@@ -1,4 +1,11 @@
 rm -rf ~/.config/vim-easycomplete/
 rm -rf ~/.vim_runtime/
-mv ~/.vim_runtime.bak/ ~/.vim_runtime/
-mv ~/.vimrc.bak ~/vimrc
+if [ -d "~/.vim_runtime.bak/" ]; then
+  cp ~/.vim_runtime.bak ~/.vim_runtime
+fi
+
+if [ -d "~/.vimrc.bak" ]; then
+  cp ~/.vimrc.bak ~/.vimrc
+fi
+
+

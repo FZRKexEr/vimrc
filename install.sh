@@ -1,9 +1,13 @@
 #/bin/sh
 set -e
 
-rm -rf ~/.vim_runtime.bak
-cp ~/.vim_runtime ~/.vim_runtime.bak
-cp ~/.vimrc ~/.vimrc.bak
+if [ -d "~/.vim_runtime" ]; then
+  cp ~/.vim_runtime ~/.vim_runtime.bak
+fi
+
+if [ -d "~/.vimrc" ]; then
+  cp ~/.vimrc ~/.vimrc.bak
+fi
 
 git clone --depth=1 https://github.com/fzrkexer/vimrc ~/.vim_runtime
 
@@ -14,3 +18,4 @@ source ~/.vim_runtime/init.vim
 
 echo "Installation succeeded! ヾ(≧∇≦*)ゝ"
 echo "The plugins are automatically installed the first time Vim starts."
+
