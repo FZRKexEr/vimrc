@@ -1,6 +1,6 @@
 # Vimrc
 
-A beautiful and practical vim configuration used for daily XCPC training.
+A beautiful and practical vim configuration used for daily XCPC training. This is my first generation vim configuration (although there is no second generation yet)
 
 - Suitable for C/C++ (hightlight, auto-pair, compile and run).
 - Beautiful and eye-protecting dark colorscheme.

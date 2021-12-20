@@ -10,6 +10,9 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
+  " 不好！
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  " 目前轻量代码补全最佳之选
   Plug 'jayli/vim-easycomplete'
   "vim wiki
   Plug 'vimwiki/vimwiki'
@@ -30,9 +33,6 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'octol/vim-cpp-enhanced-highlight'
   " 自动保存
   Plug 'thaerkh/vim-workspace'
-	" 显示缩进线
-
-  Plug 'Yggdroot/indentLine'
   " 不需要Lsp的语法检查
 "  Plug 'dense-analysis/ale'
 
@@ -48,6 +48,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
 call plug#end()
 
+source ~/.vim_runtime/core/markdownpreview.vim
 source ~/.vim_runtime/core/ale.vim
 source ~/.vim_runtime/core/workspace.vim
 source ~/.vim_runtime/core/rainbow.vim
@@ -55,6 +56,7 @@ source ~/.vim_runtime/core/markdown.vim
 source ~/.vim_runtime/core/indentLine.vim
 source ~/.vim_runtime/core/vimwiki.vim
 source ~/.vim_runtime/core/pear-tree.vim
+"source ~/.vim_runtime/core/indentLine.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
@@ -68,6 +70,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
 " 不喜欢
 "set backspace=eol,start,indent
 "set whichwrap+=<,>,h,l
@@ -117,7 +120,6 @@ nnoremap <S-l> :bnext <CR>
 nnoremap <leader>q :bdelet <CR>
 
 " 括号匹配系列
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MacVim Configuration
