@@ -9,7 +9,7 @@ let g:pear_tree_pairs = {
 " See pear-tree/after/ftplugin/ for filetype-specific matching rules
 
 " Pear Tree is enabled for all filetypes by default:
-let g:pear_tree_ft_disabled = ['markdown']
+let g:pear_tree_ft_disabled = []
 
 " Pair expansion is dot-repeatable by default:
 let g:pear_tree_repeatable_expand = 0
