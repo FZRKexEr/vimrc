@@ -4,7 +4,6 @@ A beautiful and practical vim configuration used for daily XCPC training.
 
 - Suitable for C/C++ (hightlight, auto-pair, compile and run).
 - Beautiful and eye-protecting dark colorscheme.
-- Real-time syntax error prompt.
 - Markdown support
 - Include vimwiki (Write problem solution)
 - Ready to use out of the box, no additional configuration required.
@@ -16,11 +15,15 @@ A beautiful and practical vim configuration used for daily XCPC training.
 
 ## Requirements
 
+- g++
 - git
 - curl
 - wget
-- ccls
+- ccls (not necessary, but recommended)
 - Python2.7+ or Python3.1+
+- Vim with python support
+
+On macOS: Do not use macOS native vim. Use homebrew to install vim.
 
 ## How to install
 
