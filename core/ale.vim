@@ -5,3 +5,7 @@
 " source for other completion plugins, like Deoplete.
 let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
+" <expr> ????
+inoremap <silent><expr> <TAB> (pumvisible() ? '<C-n>' : '<TAB>')
+
+

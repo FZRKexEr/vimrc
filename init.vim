@@ -8,15 +8,7 @@ if empty(glob('~/.vim_runtime/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source ~/.vimrc
 endif
 
-
 source ~/.vim_runtime/core/ale.vim
-source ~/.vim_runtime/core/workspace.vim
-source ~/.vim_runtime/core/rainbow.vim
-source ~/.vim_runtime/core/markdown.vim
-source ~/.vim_runtime/core/indentLine.vim
-source ~/.vim_runtime/core/vimwiki.vim
-source ~/.vim_runtime/core/pear-tree.vim
-
 call plug#begin('~/.vim_runtime/plugged')
 
   "vim wiki
@@ -55,6 +47,14 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/edge'
 
 call plug#end()
+source ~/.vim_runtime/core/workspace.vim
+source ~/.vim_runtime/core/rainbow.vim
+source ~/.vim_runtime/core/markdown.vim
+source ~/.vim_runtime/core/indentLine.vim
+source ~/.vim_runtime/core/vimwiki.vim
+source ~/.vim_runtime/core/pear-tree.vim
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
