@@ -8,6 +8,14 @@ if empty(glob('~/.vim_runtime/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source ~/.vimrc
 endif
 
+
+source ~/.vim_runtime/core/ale.vim
+source ~/.vim_runtime/core/workspace.vim
+source ~/.vim_runtime/core/rainbow.vim
+source ~/.vim_runtime/core/markdown.vim
+source ~/.vim_runtime/core/indentLine.vim
+
+
 call plug#begin('~/.vim_runtime/plugged')
 
   " 括号匹配(注意<CR> 冲突)
@@ -31,7 +39,7 @@ call plug#begin('~/.vim_runtime/plugged')
 
   Plug 'Yggdroot/indentLine'
   " 不需要Lsp的语法检查
-"  Plug 'dense-analysis/ale'
+  Plug 'dense-analysis/ale'
 
   " Colors
   Plug 'arcticicestudio/nord-vim'
@@ -44,11 +52,6 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/edge'
 
 call plug#end()
-
-source ~/.vim_runtime/core/workspace.vim
-source ~/.vim_runtime/core/rainbow.vim
-source ~/.vim_runtime/core/markdown.vim
-source ~/.vim_runtime/core/indentLine.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Core Configuration
