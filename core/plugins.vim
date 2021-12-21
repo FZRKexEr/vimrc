@@ -16,6 +16,7 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'godlygeek/tabular'
   Plug 'gabrielelana/vim-markdown'
 
+  Plug 'lervag/wiki.vim'
   " 文件搜索
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
@@ -34,8 +35,7 @@ call plug#begin('~/.vim_runtime/plugged')
   " 自动保存
   Plug 'thaerkh/vim-workspace'
 
-  " 不需要安装 Lsp 的语法检查(非常好的一个插件，但是我怎么也配置不好 completion,
-  " 只能专用 easycomplete, easycomplete 也很好，以后再研究一下)
+
   " Plug 'dense-analysis/ale'
 
   " Colors
@@ -47,8 +47,12 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/everforest'
   Plug 'sainnhe/sonokai'
   Plug 'sainnhe/edge'
-
 call plug#end()
+
+" wiki
+let g:wiki_root = '~/desktop/wiki'
+let g:wiki_filetypes = ['md']
+let g:wiki_link_extension = '.md'
 
 " vim-cpp-enhanced-highlight
 let g:cpp_attributes_highlight = 1
@@ -61,14 +65,6 @@ let g:markdown_enable_conceal = 0
 
 " vim-workspace
 let g:workspace_autosave_always = 1
-
-" vimwiki
-
-let g:vimwiki_list = [{
-      \ 'path': '~/desktop/wiki/',
-      \ 'syntax': 'markdown',
-      \ 'ext': '.md'
-      \ }]
 
 " color
 if empty(glob('~/.vim_runtime/plugged/everforest/README.md'))
