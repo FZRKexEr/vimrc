@@ -61,15 +61,16 @@ Apart from the default colorscheme, several other colorschemes are built in.
 
 The `leader` is `<Space>`.
 
-| Command      | Description                              |
-| ------------ | ---------------------------              |
-| `<leader>r`  | compile and run                          |
-| `<S-h>`      | move to the previous buffer              |
-| `<S-l>`      | move to the next buffer                  |
-| `<leader>q`  | Exit the current buffer                  |
-| `<leader>f`  | File searchf                             |
-| `<space>e`   | Try it in a markdown file                |
-| `<leader>ww` | Open index page of vimwiki               |
-| `<CR>`       | In the vimwiki: create/open another wiki |
+| Command      | Description                                   |
+| ------------ | --------------------------------------------- |
+| `<leader>r`  | compile and run                               |
+| `<S-h>`      | move to the previous buffer                   |
+| `<S-l>`      | move to the next buffer                       |
+| `<leader>q`  | Exit the current buffer                       |
+| `<leader>f`  | File searchf                                  |
+| `<space>e`   | Try it in a markdown file                     |
+| `<leader>ww` | Open index page of vimwiki                    |
+| `<CR>`       | In the vimwiki: create/open another wiki      |
+| `<leader>wf` | In the vimwiki: Change the form of connection |
 
 
