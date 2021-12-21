@@ -9,9 +9,6 @@ call plug#begin('~/.vim_runtime/plugged')
   " 开箱即用的 Lsp 代码补全
   Plug 'jayli/vim-easycomplete'
 
-  "vim wiki
-  Plug 'vimwiki/vimwiki'
-
   " 括号匹配(注意<CR> 冲突)
   Plug 'tmsvg/pear-tree'
 
@@ -66,8 +63,12 @@ let g:markdown_enable_conceal = 0
 let g:workspace_autosave_always = 1
 
 " vimwiki
-let g:vimwiki_list = [{'path': '~/desktop/wiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+let g:vimwiki_list = [{
+      \ 'path': '~/desktop/wiki/',
+      \ 'syntax': 'markdown',
+      \ 'ext': '.md'
+      \ }]
 
 " color
 if empty(glob('~/.vim_runtime/plugged/everforest/README.md'))
