@@ -19,9 +19,9 @@ A beautiful and practical vim configuration used for daily XCPC training. This i
 - git
 - curl
 - wget
-- ccls (not necessary, but recommended)
 - Python2.7+ or Python3.1+
 - Vim with python support
+- ccls (not necessary, but recommended)
 
 On macOS: Do not use macOS native vim. Use homebrew to install vim.
 
