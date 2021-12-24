@@ -36,7 +36,7 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'thaerkh/vim-workspace'
 
 
-  " Plug 'dense-analysis/ale'
+  Plug 'dense-analysis/ale'
 
   " Colors
   Plug 'arcticicestudio/nord-vim'
@@ -48,6 +48,9 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/sonokai'
   Plug 'sainnhe/edge'
 call plug#end()
+
+" easycomplete
+let g:easycomplete_diagnostics_enable = 0
 
 " wiki
 let g:wiki_root = '~/desktop/wiki'
