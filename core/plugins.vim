@@ -16,7 +16,6 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'godlygeek/tabular'
   Plug 'gabrielelana/vim-markdown'
 
-  Plug 'lervag/wiki.vim'
   " 文件搜索
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
@@ -35,7 +34,6 @@ call plug#begin('~/.vim_runtime/plugged')
   " 自动保存
   Plug 'thaerkh/vim-workspace'
 
-
   Plug 'dense-analysis/ale'
 
   " Colors
@@ -51,11 +49,6 @@ call plug#end()
 
 " easycomplete
 let g:easycomplete_diagnostics_enable = 0
-
-" wiki
-let g:wiki_root = '~/desktop/wiki'
-let g:wiki_filetypes = ['md']
-let g:wiki_link_extension = '.md'
 
 " vim-cpp-enhanced-highlight
 let g:cpp_attributes_highlight = 1

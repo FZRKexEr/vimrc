@@ -5,7 +5,6 @@ A beautiful and practical vim configuration used for daily XCPC training. This i
 - Suitable for C/C++ (hightlight, auto-pair, compile and run).
 - Beautiful and eye-protecting dark colorscheme.
 - Markdown support
-- Include vimwiki (Write problem solution)
 - Ready to use out of the box, no additional configuration required.
 - No other useless functions.
 
@@ -69,8 +68,5 @@ The `leader` is `<Space>`.
 | `<leader>q`  | Exit the current buffer                       |
 | `<leader>f`  | File searchf                                  |
 | `<space>e`   | Try it in a markdown file                     |
-| `<leader>ww` | Open index page of vimwiki                    |
-| `<CR>`       | In the vimwiki: create/open another wiki      |
-| `<leader>wf` | In the vimwiki: Change the form of connection |
 
 
