@@ -6,7 +6,7 @@ A beautiful and practical vim configuration used for daily XCPC training. This i
 - Beautiful and eye-protecting dark colorscheme.
 - Markdown support
 - Ready to use out of the box, no additional configuration required.
-- No other useless functions.
+- No other unnecessary functions. (eg: status line & buffer line)
 
 ## Screenshot
 
@@ -18,11 +18,6 @@ A beautiful and practical vim configuration used for daily XCPC training. This i
 - git
 - curl
 - wget
-- Python2.7+ or Python3.1+
-- Vim with python support
-- ccls (not necessary, but recommended)
-
-On macOS: Do not use macOS native vim. Use homebrew to install vim.
 
 ## How to install
 
@@ -42,20 +37,6 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/vimrc/main/install.
 2. 使用 [dev-sidercar](https://github.com/docmirror/dev-sidecar)(推荐)。
 3. 换个时间试试。
 
-## Colorscheme
-
-Apart from the default colorscheme, several other colorschemes are built in.
-
-- nord
-- deus
-- one
-- palenight
-- gruvbox-material
-- everforest (Default)
-- sonokai
-- edge
-
-
 ## Usage
 
 The `leader` is `<Space>`.
@@ -63,9 +44,6 @@ The `leader` is `<Space>`.
 | Command      | Description                                   |
 | ------------ | --------------------------------------------- |
 | `<leader>r`  | compile and run                               |
-| `<S-h>`      | move to the previous buffer                   |
-| `<S-l>`      | move to the next buffer                       |
-| `<leader>q`  | Exit the current buffer                       |
 | `<leader>f`  | File searchf                                  |
 | `<space>e`   | Try it in a markdown file                     |
 
