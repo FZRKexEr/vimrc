@@ -6,9 +6,6 @@ endif
 
 call plug#begin('~/.vim_runtime/plugged')
 
-  " 开箱即用的 Lsp 代码补全
-  Plug 'jayli/vim-easycomplete'
-
   " 括号匹配(注意<CR> 冲突)
   Plug 'tmsvg/pear-tree'
 
@@ -23,7 +20,7 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'luochen1990/rainbow'
 
   " 支持 tab 的 buffer 栏
-  Plug 'zefei/vim-wintabs'
+  " Plug 'zefei/vim-wintabs'
 
   " 强化终端 Vim 体验, 接近 Gui (Good!)
   Plug 'wincent/terminus'
@@ -37,18 +34,8 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'dense-analysis/ale'
 
   " Colors
-  Plug 'arcticicestudio/nord-vim'
-  Plug 'ajmwagar/vim-deus'
-  Plug 'rakr/vim-one'
-  Plug 'drewtempelmeyer/palenight.vim'
-  Plug 'sainnhe/gruvbox-material'
   Plug 'sainnhe/everforest'
-  Plug 'sainnhe/sonokai'
-  Plug 'sainnhe/edge'
 call plug#end()
-
-" easycomplete
-let g:easycomplete_diagnostics_enable = 0
 
 " vim-cpp-enhanced-highlight
 let g:cpp_attributes_highlight = 1
