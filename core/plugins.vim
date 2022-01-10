@@ -31,7 +31,11 @@ call plug#begin('~/.vim_runtime/plugged')
   " 自动保存
   Plug 'thaerkh/vim-workspace'
 
+  " Lsp
   Plug 'dense-analysis/ale'
+
+  " Vim 中文文档
+  Plug 'yianwillis/vimcdoc'
 
   " Colors
   Plug 'sainnhe/everforest'
@@ -54,6 +58,7 @@ if empty(glob('~/.vim_runtime/plugged/everforest/README.md'))
 else
   colo everforest
 endif
+
 
 " pear-tree
 let g:pear_tree_repeatable_expand = 0
