@@ -41,6 +41,14 @@ call plug#begin('~/.vim_runtime/plugged')
   Plug 'sainnhe/everforest'
 call plug#end()
 
+" ale
+let g:ale_linters = {'cpp': ['cc', 'cppcheck']}
+let g:ale_echo_msg_format = '[%linter%] %code: %%s'
+let g:ale_cpp_cc_executable = 'gcc-11' 
+let g:ale_cpp_cc_options = '-Wall -O2 -std=c++17'
+let g:ale_cpp_cppcheck_options = '-Wall -O2 -std=c++17'
+
+
 " vim-cpp-enhanced-highlight
 let g:cpp_attributes_highlight = 1
 let g:cpp_member_highlight = 1
@@ -59,12 +67,9 @@ else
   colo everforest
 endif
 
-
 " pear-tree
 let g:pear_tree_repeatable_expand = 0
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
 
-" rainbow
-let g:rainbow_active = 1
