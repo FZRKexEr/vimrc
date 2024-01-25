@@ -31,14 +31,16 @@ colorscheme sonokai
 
 "  asyncrun
 let g:asyncrun_open = 6
+let g:asyncrun_encs = 'gbk'
 
 " asynctasks
 noremap <silent><f5> :AsyncTask file-run<cr>
 noremap <silent><f6> :AsyncTask project-run<cr>
-noremap <silent><f7> :AsyncTask project-build<cr>
-noremap <silent><f8> :AsyncTask project-init<cr>
-noremap <silent><f9> :AsyncTask file-build<cr>
-let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
+noremap <silent><f4> :AsyncStop<cr>
+noremap <f3> :AsyncRun<space>
+
+
+let g:asyncrun_rootmarks = ['CMakeLists.txt', '.git', '.svn', '.root', '.project', '.hg']
 let g:asynctasks_confirm = 0
 let g:asynctasks_extra_config = [
     \ g:init_home.'/tasks.ini',

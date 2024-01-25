@@ -7,11 +7,12 @@ set guioptions-=T
 set guioptions-=r
 autocmd GUIEnter * set vb t_vb=
 
-
 let $LANG='en'
 syntax on
 filetype plugin indent on
 
+
+set gfn=JetBrainsMonoNL_NFM:h12 gfw=楷体:h16
 
 " buffer and windows
 nnoremap <S-l> :call MoveBuffer(1)<CR>
